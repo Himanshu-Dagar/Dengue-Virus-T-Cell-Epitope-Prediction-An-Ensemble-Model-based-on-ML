@@ -1,0 +1,149 @@
+p=Positive$`Epitope Description`
+E=pI(seq = p, pKscale = "EMBOSS")
+E
+View(E)
+write.csv(E,"Emboss.csv")
+X=Positive$`Epitope Description`
+J=mw(seq = X)
+J
+write.csv(J,"Molecular.csv")
+
+A=Positive$`Epitope Description`
+B=charge(seq = A, pH = 7, pKscale = "EMBOSS")
+B
+View(B)
+write.csv(B,"Charge.csv")
+
+p=Positive$`Epitope Description`
+T= aIndex(seq = p)
+T
+View(T)
+write.csv(T,"AliphaticIndex.csv")
+p=Positive$`Epitope Description`
+C= instaIndex(seq = p)
+C
+View(C)
+write.csv(C,"InstabilitIndex.csv")
+p=Positive$`Epitope Description`
+S= boman(seq = p)
+S
+view(S)
+write.csv(S,"BomanIndex.csv")
+p=Positive$`Epitope Description`
+F= kideraFactors(seq= p)
+F
+View(F)
+write.csv(F,"kideraFactors.csv")
+p=Positive$`Epitope Description`
+V=blosumIndices(seq = p)
+V
+View(V)
+write.csv(V,"blosumIndices.csv")
+L=Positive$`Epitope Description`
+M=aaComp(seq= p)
+install.packages("Peptides")
+library(Peptides)
+
+X=fasgaiVectors(seq = p)
+X
+View(X)
+write.csv(X,"Fasgaivectors.csv")
+p=Positive$`Epitope Description`
+crucianiProperties(seq= p)
+X=crucianiProperties(seq= p)
+X
+View(X)
+write.csv(V,"Cruciani.csv")
+library(stringr)
+P=Positive$`Epitope Description`
+Z=str_count(P)
+Z
+View(Z)
+write.csv(Z,"Peptidecount")
+
+
+N=Negative_dataset$`Epitope Description`
+Y=str_count(N)
+Y
+View(Y)
+write.csv(Y,"NegativePeptidecount.csv")
+
+
+install.packages("Peptides")
+library(Peptides)
+N=Negative_dataset$`Epitope Description`
+X=pI(seq= N,pKscale= "EMBOSS")
+View(X)
+write.csv(X,"NegativePI")
+
+library(Peptides)
+W=Negative_dataset$`Epitope Description`
+q=mw(seq = W)
+q
+View(q)
+write.csv(q,"NegativeMolecularweight.csv")
+
+
+X=charge(seq = A, pH = 7, pKscale = "EMBOSS")
+X
+View(X)
+write.csv(X,"NegativeCharge.csv")
+
+p=Negative_dataset$`Epitope Description`
+R= aIndex(seq = p)
+R
+View(T)
+write.csv(R,"NegativeAliphaticIndex.csv")
+
+p=Negative_dataset$`Epitope Description`
+I= instaIndex(seq = p)
+I
+View(I)
+write.csv(I,"NegativeInstabilitIndex.csv")
+
+
+p=Negative_dataset$`Epitope Description`
+L= boman(seq = p)
+L
+View(L)
+write.csv(L,"NegativeBomanIndex.csv")
+
+p=Negative_dataset$`Epitope Description`
+K= kideraFactors(seq= p)
+K
+View(K)
+write.csv(K,"NegativekideraFactors.csv")
+
+T=Negative_dataset$`Epitope Description`
+s=blosumIndices(seq = T)
+s
+View(s)
+write.csv(s,"NegativeblosumIndices.csv")
+
+T=Negative_dataset$`Epitope Description`
+F=fasgaiVectors(seq = T)
+F
+View(F)
+write.csv(F,"Fasgaivectors.csv")
+
+
+install.packages("Peptides")
+library(Peptides)
+T=Negative_dataset$`Epitope Description`
+X=aaComp(seq = T)
+X
+View(X)
+write.csv(X,"negativeAAcomp.csv")
+
+E=Negative_dataset$`Epitope Description`
+crucianiProperties(seq= E)
+b=crucianiProperties(seq= E)
+b
+View(b)
+write.csv(b,"NegativeCruciani.csv")
+
+n=Negative_dataset$`Epitope Description`
+o=protFP(seq = n)
+o
+View(o)
+write.csv(o,"negativeProtFp.csv")
