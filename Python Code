@@ -1,0 +1,2335 @@
+! pip install plotly
+Requirement already satisfied: plotly in c:\users\himanshu dagar\anaconda3\lib\site-packages (5.7.0)
+Requirement already satisfied: tenacity>=6.2.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from plotly) (8.0.1)
+Requirement already satisfied: six in c:\users\himanshu dagar\anaconda3\lib\site-packages (from plotly) (1.16.0)
+! pip install -U imbalanced-learn
+Requirement already satisfied: imbalanced-learn in c:\users\himanshu dagar\anaconda3\lib\site-packages (0.9.1)
+Requirement already satisfied: numpy>=1.17.3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn) (1.20.3)
+Requirement already satisfied: scipy>=1.3.2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn) (1.7.1)
+Requirement already satisfied: threadpoolctl>=2.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn) (2.2.0)
+Requirement already satisfied: scikit-learn>=1.1.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn) (1.1.0)
+Requirement already satisfied: joblib>=1.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn) (1.1.0)
+! pip install featurewiz
+Requirement already satisfied: featurewiz in c:\users\himanshu dagar\anaconda3\lib\site-packages (0.1.55)
+Requirement already satisfied: category-encoders in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (2.4.1)
+Requirement already satisfied: fsspec>=0.3.3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (2021.10.1)
+Requirement already satisfied: distributed>=2021.11.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (2022.5.2)
+Requirement already satisfied: jupyter in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (1.0.0)
+Requirement already satisfied: Pillow<=9.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (8.4.0)
+Requirement already satisfied: tqdm in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (4.62.3)
+Requirement already satisfied: seaborn in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (0.11.2)
+Requirement already satisfied: dask>=2021.11.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (2022.5.2)
+Requirement already satisfied: ipython in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (7.29.0)
+Requirement already satisfied: feather-format>=0.4.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (0.4.1)
+Requirement already satisfied: lightgbm>=3.2.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (3.3.2)
+Requirement already satisfied: networkx in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (2.6.3)
+Requirement already satisfied: pyarrow==7.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (7.0.0)
+Requirement already satisfied: imbalanced-learn>=0.7 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (0.9.1)
+Requirement already satisfied: xlrd in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (2.0.1)
+Requirement already satisfied: xgboost>=1.5.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (1.6.1)
+Requirement already satisfied: matplotlib in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (3.4.3)
+Requirement already satisfied: scikit-learn>=0.23.2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (1.1.0)
+Requirement already satisfied: pandas>=1.3.4 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from featurewiz) (1.3.4)
+Requirement already satisfied: numpy>=1.16.6 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from pyarrow==7.0.0->featurewiz) (1.20.3)
+Requirement already satisfied: partd>=0.3.10 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from dask>=2021.11.0->featurewiz) (1.2.0)
+Requirement already satisfied: toolz>=0.8.2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from dask>=2021.11.0->featurewiz) (0.11.1)
+Requirement already satisfied: packaging>=20.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from dask>=2021.11.0->featurewiz) (21.0)
+Requirement already satisfied: cloudpickle>=1.1.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from dask>=2021.11.0->featurewiz) (2.0.0)
+Requirement already satisfied: pyyaml>=5.3.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from dask>=2021.11.0->featurewiz) (6.0)
+Requirement already satisfied: locket>=1.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (1.0.0)
+Requirement already satisfied: zict>=0.1.3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (2.0.0)
+Requirement already satisfied: urllib3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (1.26.7)
+Requirement already satisfied: tblib>=1.6.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (1.7.0)
+Requirement already satisfied: psutil>=5.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (5.8.0)
+Requirement already satisfied: jinja2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (2.11.3)
+Requirement already satisfied: click>=6.6 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (8.0.3)
+Requirement already satisfied: msgpack>=0.6.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (1.0.2)
+Requirement already satisfied: tornado>=6.0.3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (6.1)
+Requirement already satisfied: sortedcontainers!=2.0.0,!=2.0.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from distributed>=2021.11.0->featurewiz) (2.4.0)
+Requirement already satisfied: colorama in c:\users\himanshu dagar\anaconda3\lib\site-packages (from click>=6.6->distributed>=2021.11.0->featurewiz) (0.4.4)
+Requirement already satisfied: scipy>=1.3.2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn>=0.7->featurewiz) (1.7.1)
+Requirement already satisfied: threadpoolctl>=2.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn>=0.7->featurewiz) (2.2.0)
+Requirement already satisfied: joblib>=1.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from imbalanced-learn>=0.7->featurewiz) (1.1.0)
+Requirement already satisfied: wheel in c:\users\himanshu dagar\anaconda3\lib\site-packages (from lightgbm>=3.2.1->featurewiz) (0.37.0)
+Requirement already satisfied: pyparsing>=2.0.2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from packaging>=20.0->dask>=2021.11.0->featurewiz) (3.0.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from pandas>=1.3.4->featurewiz) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from pandas>=1.3.4->featurewiz) (2021.3)
+Requirement already satisfied: six>=1.5 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from python-dateutil>=2.7.3->pandas>=1.3.4->featurewiz) (1.16.0)
+Requirement already satisfied: heapdict in c:\users\himanshu dagar\anaconda3\lib\site-packages (from zict>=0.1.3->distributed>=2021.11.0->featurewiz) (1.0.1)
+Requirement already satisfied: statsmodels>=0.9.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from category-encoders->featurewiz) (0.12.2)
+Requirement already satisfied: patsy>=0.5.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from category-encoders->featurewiz) (0.5.2)
+Requirement already satisfied: decorator in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (5.1.0)
+Requirement already satisfied: pickleshare in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (0.7.5)
+Requirement already satisfied: pygments in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (2.10.0)
+Requirement already satisfied: setuptools>=18.5 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (58.0.4)
+Requirement already satisfied: matplotlib-inline in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (0.1.2)
+Requirement already satisfied: jedi>=0.16 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (0.18.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (3.0.20)
+Requirement already satisfied: backcall in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (0.2.0)
+Requirement already satisfied: traitlets>=4.2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipython->featurewiz) (5.1.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jedi>=0.16->ipython->featurewiz) (0.8.2)
+Requirement already satisfied: wcwidth in c:\users\himanshu dagar\anaconda3\lib\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython->featurewiz) (0.2.5)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jinja2->distributed>=2021.11.0->featurewiz) (1.1.1)
+Requirement already satisfied: jupyter-console in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter->featurewiz) (6.4.0)
+Requirement already satisfied: notebook in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter->featurewiz) (6.4.5)
+Requirement already satisfied: nbconvert in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter->featurewiz) (6.1.0)
+Requirement already satisfied: ipykernel in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter->featurewiz) (6.4.1)
+Requirement already satisfied: qtconsole in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter->featurewiz) (5.1.1)
+Requirement already satisfied: ipywidgets in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter->featurewiz) (7.6.5)
+Requirement already satisfied: ipython-genutils in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipykernel->jupyter->featurewiz) (0.2.0)
+Requirement already satisfied: debugpy<2.0,>=1.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipykernel->jupyter->featurewiz) (1.4.1)
+Requirement already satisfied: jupyter-client<8.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipykernel->jupyter->featurewiz) (6.1.12)
+Requirement already satisfied: jupyter-core>=4.6.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter-client<8.0->ipykernel->jupyter->featurewiz) (4.8.1)
+Requirement already satisfied: pyzmq>=13 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter-client<8.0->ipykernel->jupyter->featurewiz) (22.2.1)
+Requirement already satisfied: pywin32>=1.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jupyter-core>=4.6.0->jupyter-client<8.0->ipykernel->jupyter->featurewiz) (228)
+Requirement already satisfied: nbformat>=4.2.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipywidgets->jupyter->featurewiz) (5.1.3)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipywidgets->jupyter->featurewiz) (3.5.1)
+Requirement already satisfied: jupyterlab-widgets>=1.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from ipywidgets->jupyter->featurewiz) (1.0.0)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbformat>=4.2.0->ipywidgets->jupyter->featurewiz) (3.2.0)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets->jupyter->featurewiz) (21.2.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.2.0->ipywidgets->jupyter->featurewiz) (0.18.0)
+Requirement already satisfied: argon2-cffi in c:\users\himanshu dagar\anaconda3\lib\site-packages (from notebook->jupyter->featurewiz) (20.1.0)
+Requirement already satisfied: Send2Trash>=1.5.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from notebook->jupyter->featurewiz) (1.8.0)
+Requirement already satisfied: prometheus-client in c:\users\himanshu dagar\anaconda3\lib\site-packages (from notebook->jupyter->featurewiz) (0.11.0)
+Requirement already satisfied: terminado>=0.8.3 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from notebook->jupyter->featurewiz) (0.9.4)
+Requirement already satisfied: pywinpty>=0.5 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from terminado>=0.8.3->notebook->jupyter->featurewiz) (0.5.7)
+Requirement already satisfied: cffi>=1.0.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from argon2-cffi->notebook->jupyter->featurewiz) (1.14.6)
+Requirement already satisfied: pycparser in c:\users\himanshu dagar\anaconda3\lib\site-packages (from cffi>=1.0.0->argon2-cffi->notebook->jupyter->featurewiz) (2.20)
+Requirement already satisfied: cycler>=0.10 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from matplotlib->featurewiz) (0.10.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from matplotlib->featurewiz) (1.3.1)
+Requirement already satisfied: jupyterlab-pygments in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (0.1.2)
+Requirement already satisfied: entrypoints>=0.2.2 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (0.3)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (0.5.3)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (1.4.3)
+Requirement already satisfied: bleach in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (4.0.0)
+Requirement already satisfied: testpath in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (0.5.0)
+Requirement already satisfied: mistune<2,>=0.8.1 in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (0.8.4)
+Requirement already satisfied: defusedxml in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbconvert->jupyter->featurewiz) (0.7.1)
+Requirement already satisfied: async-generator in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert->jupyter->featurewiz) (1.10)
+Requirement already satisfied: nest-asyncio in c:\users\himanshu dagar\anaconda3\lib\site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert->jupyter->featurewiz) (1.5.1)
+Requirement already satisfied: webencodings in c:\users\himanshu dagar\anaconda3\lib\site-packages (from bleach->nbconvert->jupyter->featurewiz) (0.5.1)
+Requirement already satisfied: qtpy in c:\users\himanshu dagar\anaconda3\lib\site-packages (from qtconsole->jupyter->featurewiz) (1.10.0)
+! pip install xgboost
+Requirement already satisfied: xgboost in c:\users\himanshu dagar\anaconda3\lib\site-packages (1.6.1)
+Requirement already satisfied: numpy in c:\users\himanshu dagar\anaconda3\lib\site-packages (from xgboost) (1.20.3)
+Requirement already satisfied: scipy in c:\users\himanshu dagar\anaconda3\lib\site-packages (from xgboost) (1.7.1)
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+import seaborn as sns
+from scipy import stats
+import plotly.graph_objects as go
+import plotly.express as px
+import warnings
+warnings.filterwarnings('ignore')
+from scipy import stats
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
+from imblearn.over_sampling import SMOTE
+from imblearn.under_sampling import RandomUnderSampler
+from imblearn.over_sampling import RandomOverSampler
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.tree import DecisionTreeClassifier
+from xgboost import XGBClassifier
+from sklearn.svm import SVC
+from sklearn.neural_network import MLPClassifier
+from sklearn.ensemble import VotingClassifier
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold
+from featurewiz import featurewiz
+from sklearn.metrics import roc_curve, roc_auc_score
+import joblib
+Imported version = 0.1.55.
+from featurewiz import FeatureWiz
+wiz = FeatureWiz(verbose=1)
+X_train_selected = wiz.fit_transform(X_train, y_train)
+X_test_selected = wiz.transform(X_test)
+wiz.features  ### provides a list of selected features ###
+                                
+Basic Checks
+df = pd.read_csv('combined file.csv')
+df.head()
+df.shape
+df.info()
+<class 'pandas.core.frame.DataFrame'>
+
+ df.isnull().sum()
+df.nunique()
+Removing Duplicate values
+df.drop_duplicates(subset = 'Epitope Description', keep = False, inplace = True)
+df.head()
+df.shape
+df.info()
+<class 'pandas.core.frame.DataFrame'>
+df.nunique()
+Data Description
+df.describe()
+df.corr()
+Multi-Collinearity Check
+rcParams['figure.figsize']= 32,22
+sns.heatmap(df.corr(), annot = True)
+plt.show()
+df = df.drop(['Peptidecount', 'PI', 'Charge', 'KF2(Side-chain size)', 'KF4(Hydrophobicity)', 'BLOSUM1' , 'Aliphatic', 'Polar', 'ProtFP2', 'PP1(Polarity)', 'PP2(Hydrophobicity)'], axis = 1)
+df.head()
+Checking Data collinearity again.
+df.corr()
+sns.heatmap(df.corr(), annot=True)
+plt.show()
+Checking outliers in the Data
+df.drop('Epitope Description', axis = 1, inplace=True)
+df
+Calculating the percentage of each class
+(100*df.Class.value_counts())/len(df.Class)
+rcParams['figure.figsize']= 10,8
+df.Class.value_counts().plot.pie(autopct ='%.2f')
+plt.legend(['0 = Negative', '1 = Positive'])
+plt.title('Negative VS Positive data')
+plt.show()rcParams['figure.figsize']= 10,8
+plt.hist(df.Class)
+plt.xlabel("Class Types")
+plt.xticks(df.Class)
+plt.ylabel("Total number of classes")
+plt.title("Epitope VS Non-Epitope ")
+plt.show()
+df.columns
+Index(['Class', ' Molecular Weight', 'Aliphatic Index', 'Instability index',
+       'BomanIndex', ' kideraFactors    KF1(Helix/bend preference)',
+       'KF3(Extended structure preference)', 'KF5(Double-bend preference)',
+       'KF6 (Partial specific volume)', 'KF7(Flat extended preference)',
+       'KF8(Occurrence in alpha region)', 'KF9( pK-C)',
+       'KF10(Surrounding hydrophobicity)', 'BLOSUM2', 'BLOSUM3', 'BLOSUM4',
+       'BLOSUM5', 'BLOSUM6', 'BLOSUM7', 'BLOSUM8', 'BLOSUM9', 'BLOSUM10',
+       'FasgaiVectors(F1)', 'F2', 'F3', 'F4', 'F5', 'F6',
+       'AACOMP percentage(Tiny)', 'Small', 'Aromatic', 'NonPolar', 'Charged',
+       'Basic', 'Acidic', 'ProtFP1', 'ProtFP3', 'ProtFP4', 'ProtFP5',
+       'ProtFP6', 'ProtFP7', 'ProtFP8', 'PP3(H-bonding)'],
+      dtype='object')
+df.rename(columns={' Molecular Weight':'F2', 'Charge':'F3', 'Aliphatic Index':'F4', 'Instability index':'F5', 'BomanIndex':'F6',
+                  ' kideraFactors    KF1(Helix/bend preference)':'F7_1', 'KF3(Extended structure preference)':'F7_3','KF5(Double-bend preference)':'F7_5',
+                  'KF6 (Partial specific volume)':'F7_6', 'KF7(Flat extended preference)':'F7_7', 'KF8(Occurrence in alpha region)':'F7_8','KF9( pK-C)':'F7_9',
+                  'KF10(Surrounding hydrophobicity)':'F7_10', 'BLOSUM1':'F8_1', 'BLOSUM2':'F8_2', 'BLOSUM3':'F8_3', 'BLOSUM4':'F8_4', 'BLOSUM5':'F8_5',
+                  'BLOSUM6':'F8_6', 'BLOSUM7':'F8_7', 'BLOSUM8':'F8_8', 'BLOSUM9':'F8_9', 'BLOSUM10':'F8_10','FasgaiVectors(F1)':'F9_1',
+                  'F2':'F9_2','F3':'F9_3','F4':'F9_4','F5':'F9_5','F6':'F9_6', 'AACOMP percentage(Tiny)':'F10_1', 'Small':'F10_2', 'Aromatic':'F10_4',
+                  'NonPolar':'F10_5', 'Charged':'F10_7', 'Basic':'F10_8', 'Acidic':'F10_9', 'ProtFP1':'F11_1', 'ProtFP3':'F11_3', 'ProtFP4':'F11_4', 'ProtFP5':'F11_5',
+                  'ProtFP6':'F11_6', 'ProtFP7':'F11_7', 'ProtFP8':'F11_8', 'PP3(H-bonding)':'F12_3'}, inplace=True)
+Outlier detection and removal
+F2 Outlier Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F2))
+print('Kurtosis is: ', stats.kurtosis(df.F2))
+
+## Data Distribution
+sns.distplot(df.F2)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F2)
+plt.show()
+F4 Outlier Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F4))
+print('Kurtosis is: ', stats.kurtosis(df.F4))
+
+## Data Distribution
+sns.distplot(df.F4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F4)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F4 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F4 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [(df.F4 < lower_limit) | (df.F4 > upper_limit) ]
+
+## Removing Outliers
+df = df [ (df.F4 >= lower_limit) & (df.F4 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F4))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F4))
+
+## Data Distribution
+sns.distplot(df.F4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F4)
+plt.show()
+F5 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F5))
+print('Kurtosis is: ', stats.kurtosis(df.F5))
+
+## Data Distribution
+sns.distplot(df.F5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F5 < lower_limit) | (df.F5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F5 >= lower_limit) & (df.F5 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F5 < lower_limit) | (df.F5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F5 >= lower_limit) & (df.F5 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F5))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F5))
+
+## Data Distribution
+sns.distplot(df.F5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F5)
+plt.show()
+
+Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F6))
+print('Kurtosis is: ', stats.kurtosis(df.F6))
+
+## Data Distribution
+sns.distplot(df.F6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F6)
+plt.show()
+F7_1 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_1))
+print('Kurtosis is: ', stats.kurtosis(df.F7_1))
+
+## Data Distribution
+sns.distplot(df.F7_1)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_1)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_1 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_1 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_1 < lower_limit) | (df.F7_1 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_1 >= lower_limit) & (df.F7_1 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F7_1)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_1 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_1 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_1 < lower_limit) | (df.F7_1 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_1 >= lower_limit) & (df.F7_1 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_1))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_1))
+
+## Data Distribution
+sns.distplot(df.F7_1)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_1)
+plt.show()
+F7_3 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_3))
+print('Kurtosis is: ', stats.kurtosis(df.F7_3))
+
+## Data Distribution
+sns.distplot(df.F7_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_3)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_3 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_3 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_3 < lower_limit) | (df.F7_3 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_3 >= lower_limit) & (df.F7_3 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_3))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_3))
+
+## Data Distribution
+sns.distplot(df.F7_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_3)
+plt.show()
+F7_5 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_5))
+print('Kurtosis is: ', stats.kurtosis(df.F7_5))
+
+## Data Distribution
+sns.distplot(df.F7_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_5 < lower_limit) | (df.F7_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_5 >= lower_limit) & (df.F7_5 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F7_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_5 < lower_limit) | (df.F7_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_5 >= lower_limit) & (df.F7_5 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_5))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_5))
+
+## Data Distribution
+sns.distplot(df.F7_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_5)
+plt.show()
+F7_6 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_6))
+print('Kurtosis is: ', stats.kurtosis(df.F7_6))
+
+## Data Distribution
+sns.distplot(df.F7_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_6)
+plt.show()
+
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_6 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_6 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_6 < lower_limit) | (df.F7_6 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_6 >= lower_limit) & (df.F7_6 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_6))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_6))
+
+## Data Distribution
+sns.distplot(df.F7_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_6)
+plt.show()
+F7_7 Outlier Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_7))
+print('Kurtosis is: ', stats.kurtosis(df.F7_7))
+
+## Data Distribution
+sns.distplot(df.F7_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_7)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_7 < lower_limit) | (df.F7_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_7 >= lower_limit) & (df.F7_7 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F7_7)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_7 < lower_limit) | (df.F7_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_7 >= lower_limit) & (df.F7_7 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F7_7)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_7 < lower_limit) | (df.F7_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_7 >= lower_limit) & (df.F7_7 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_7))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_7))
+## Data Distribution
+sns.distplot(df.F7_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_7)
+plt.show()
+F7_8 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_8))
+print('Kurtosis is: ', stats.kurtosis(df.F7_8))
+
+## Data Distribution
+sns.distplot(df.F7_8)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_8)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_8 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_8 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_8 < lower_limit) | (df.F7_8 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_8 >= lower_limit) & (df.F7_8 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_8))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_8))
+
+## Data Distribution
+sns.distplot(df.F7_8)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_8)
+plt.show()
+F7_9 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_9))
+print('Kurtosis is: ', stats.kurtosis(df.F7_9))
+
+## Data Distribution
+sns.distplot(df.F7_9)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_9)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_9 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_9 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_9 < lower_limit) | (df.F7_9 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_9 >= lower_limit) & (df.F7_9 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_9))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_9))
+
+## Data Distribution
+sns.distplot(df.F7_9)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_9)
+plt.show()
+F7_10 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F7_10))
+print('Kurtosis is: ', stats.kurtosis(df.F7_10))
+
+## Data Distribution
+sns.distplot(df.F7_10)
+plt.show()
+## Outliers Detection
+sns.boxplot(df.F7_10)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_10 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_10 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_10 < lower_limit) | (df.F7_10 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_10 >= lower_limit) & (df.F7_10 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F7_10)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F7_10 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F7_10 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F7_10 < lower_limit) | (df.F7_10 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F7_10 >= lower_limit) & (df.F7_10 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F7_10))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F7_10))
+
+## Data Distribution
+sns.distplot(df.F7_10)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F7_10)
+plt.show()
+F8_2 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_2))
+print('Kurtosis is: ', stats.kurtosis(df.F8_2))
+
+## Data Distribution
+sns.distplot(df.F8_2)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_2)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_2 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_2 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_2 < lower_limit) | (df.F8_2 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_2 >= lower_limit) & (df.F8_2 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_2))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_2))
+
+## Data Distribution
+sns.distplot(df.F8_2)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_2)
+plt.show()
+
+F8_3 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_3))
+print('Kurtosis is: ', stats.kurtosis(df.F8_3))
+
+## Data Distribution
+sns.distplot(df.F8_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_3)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_3 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_3 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_3 < lower_limit) | (df.F8_3 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_3 >= lower_limit) & (df.F8_3 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F8_3)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_3 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_3 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_3 < lower_limit) | (df.F8_3 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_3 >= lower_limit) & (df.F8_3 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_3))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_3))
+
+
+## Data Distribution
+sns.distplot(df.F8_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_3)
+plt.show()
+F8_4 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_4))
+print('Kurtosis is: ', stats.kurtosis(df.F8_4))
+
+## Data Distribution
+sns.distplot(df.F8_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_4)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_4 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_4 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_4 < lower_limit) | (df.F8_4 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_4 >= lower_limit) & (df.F8_4 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F8_4)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_4 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_4 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_4 < lower_limit) | (df.F8_4 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_4 >= lower_limit) & (df.F8_4 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_4))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_4))
+
+## Data Distribution
+sns.distplot(df.F8_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_4)
+plt.show()
+F8_5 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_5))
+print('Kurtosis is: ', stats.kurtosis(df.F8_5))
+
+## Data Distribution
+sns.distplot(df.F8_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_5 < lower_limit) | (df.F8_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_5 >= lower_limit) & (df.F8_5 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F8_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_5 < lower_limit) | (df.F8_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_5 >= lower_limit) & (df.F8_5 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_5))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_5))
+
+## Data Distribution
+sns.distplot(df.F8_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_5)
+plt.show()
+F8_6 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_6))
+print('Kurtosis is: ', stats.kurtosis(df.F8_6))
+
+## Data Distribution
+sns.distplot(df.F8_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_6)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_6 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_6 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_6 < lower_limit) | (df.F8_6 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_6 >= lower_limit) & (df.F8_6 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F8_6)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_6 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_6 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_6 < lower_limit) | (df.F8_6 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_6 >= lower_limit) & (df.F8_6 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_6))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_6))
+
+## Data Distribution
+sns.distplot(df.F8_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_6)
+plt.show()
+F8_7 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_7))
+print('Kurtosis is: ', stats.kurtosis(df.F8_7))
+
+## Data Distribution
+sns.distplot(df.F8_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_7)
+plt.show(
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_7 < lower_limit) | (df.F8_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_7 >= lower_limit) & (df.F8_7 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F8_7)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_7 < lower_limit) | (df.F8_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_7 >= lower_limit) & (df.F8_7 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F8_7)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_7 < lower_limit) | (df.F8_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_7 >= lower_limit) & (df.F8_7 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_7))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_7))
+
+## Data Distribution
+sns.distplot(df.F8_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_7)
+plt.show()
+F8_8 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_8))
+print('Kurtosis is: ', stats.kurtosis(df.F8_8))
+
+## Data Distribution
+sns.distplot(df.F8_8)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_8)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_8 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_8 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_8 < lower_limit) | (df.F8_8 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_8 >= lower_limit) & (df.F8_8 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F8_8)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_8 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_8 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_8 < lower_limit) | (df.F8_8 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_8 >= lower_limit) & (df.F8_8 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_8))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_8))
+
+## Data Distribution
+sns.distplot(df.F8_8)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_8)
+plt.show()
+F8_9 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_9))
+print('Kurtosis is: ', stats.kurtosis(df.F8_9))
+
+## Data Distribution
+sns.distplot(df.F8_9)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_9)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_9 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_9 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_9 < lower_limit) | (df.F8_9 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_9 >= lower_limit) & (df.F8_9 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F8_9))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_9))
+
+## Data Distribution
+sns.distplot(df.F8_9)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_9)
+plt.show()
+F8_10 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F8_10))
+print('Kurtosis is: ', stats.kurtosis(df.F8_10))
+
+## Data Distribution
+sns.distplot(df.F8_10)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_10)
+plt.show()
+
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F8_10 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F8_10 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F8_10 < lower_limit) | (df.F8_10 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F8_10 >= lower_limit) & (df.F8_10 <= upper_limit) ]
+df.head()
+## Data Normalization	
+print('Skewness after outlier removal is: ', stats.skew(df.F8_10))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F8_10))
+
+## Data Distribution
+sns.distplot(df.F8_10)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F8_10)
+plt.show()
+F9_1 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F9_1))
+print('Kurtosis is: ', stats.kurtosis(df.F9_1))
+
+## Data Distribution
+sns.distplot(df.F9_1)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_1)
+plt.show()
+F9_2 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F9_2))
+print('Kurtosis is: ', stats.kurtosis(df.F9_2))
+
+## Data Distribution
+sns.distplot(df.F9_2)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_2)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F9_2 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F9_2 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F9_2 < lower_limit) | (df.F9_2 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F9_2 >= lower_limit) & (df.F9_2 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F9_2)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F9_2 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F9_2 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F9_2 < lower_limit) | (df.F9_2 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F9_2 >= lower_limit) & (df.F9_2 <= upper_limit) ]
+df.head()
+ ## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F9_2))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F9_2))
+
+## Data Distribution
+sns.distplot(df.F9_2)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_2)
+plt.show()
+F9_3 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F9_3))
+print('Kurtosis is: ', stats.kurtosis(df.F9_3))
+
+## Data Distribution
+sns.distplot(df.F9_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_3)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F9_3 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F9_3 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F9_3 < lower_limit) | (df.F9_3 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F9_3 >= lower_limit) & (df.F9_3 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F9_3))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F9_3))
+
+## Data Distribution
+sns.distplot(df.F9_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_3)
+plt.show()
+F9_4 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F9_4))
+print('Kurtosis is: ', stats.kurtosis(df.F9_4))
+
+## Data Distribution
+sns.distplot(df.F9_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_4)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F9_4 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F9_4 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F9_4 < lower_limit) | (df.F9_4 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F9_4 >= lower_limit) & (df.F9_4 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F9_4))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F9_4))
+
+## Data Distribution
+sns.distplot(df.F9_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_4)
+plt.show()
+F9_5 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F9_5))
+print('Kurtosis is: ', stats.kurtosis(df.F9_5))
+
+## Data Distribution
+sns.distplot(df.F9_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F9_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F9_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F9_5 < lower_limit) | (df.F9_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F9_5 >= lower_limit) & (df.F9_5 <= upper_limit) ]
+df.head()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F9_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F9_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F9_5 < lower_limit) | (df.F9_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F9_5 >= lower_limit) & (df.F9_5 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F9_5))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F9_5))
+
+## Data Distribution
+sns.distplot(df.F9_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_5)
+plt.show()
+F9_6 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F9_6))
+print('Kurtosis is: ', stats.kurtosis(df.F9_6))
+
+## Data Distribution
+sns.distplot(df.F9_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_6)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F9_6 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F9_6 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F9_6 < lower_limit) | (df.F9_6 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F9_6 >= lower_limit) & (df.F9_6 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F9_6))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F9_6))
+
+## Data Distribution
+sns.distplot(df.F9_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F9_6)
+plt.show()
+F10_1 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_1))
+print('Kurtosis is: ', stats.kurtosis(df.F10_1))
+
+## Data Distribution
+sns.distplot(df.F10_1)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_1)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F10_1 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F10_1 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F10_1 < lower_limit) | (df.F10_1 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F10_1 >= lower_limit) & (df.F10_1 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F10_1))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F10_1))
+
+## Data Distribution
+sns.distplot(df.F10_1)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_1)
+plt.show()
+F10_2 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_2))
+print('Kurtosis is: ', stats.kurtosis(df.F10_2))
+
+## Data Distribution
+sns.distplot(df.F10_2)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_2)
+plt.show()
+F10_4 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_4))
+print('Kurtosis is: ', stats.kurtosis(df.F10_4))
+
+## Data Distribution
+sns.distplot(df.F10_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_4)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F10_4 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F10_4 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F10_4 < lower_limit) | (df.F10_4 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F10_4 >= lower_limit) & (df.F10_4 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_4))
+print('Kurtosis is: ', stats.kurtosis(df.F10_4))
+
+## Data Distribution
+sns.distplot(df.F10_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_4)
+plt.show()
+F10_5 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_5))
+print('Kurtosis is: ', stats.kurtosis(df.F10_5))
+
+## Data Distribution
+sns.distplot(df.F10_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F10_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F10_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F10_5 < lower_limit) | (df.F10_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F10_5 >= lower_limit) & (df.F10_5 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F10_5))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F10_5))
+
+## Data Distribution
+sns.distplot(df.F10_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_5)
+plt.show()
+F10_7 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_7))
+print('Kurtosis is: ', stats.kurtosis(df.F10_7))
+
+## Data Distribution
+sns.distplot(df.F10_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_7)
+plt.show(
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F10_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F10_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F10_7 < lower_limit) | (df.F10_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F10_7 >= lower_limit) & (df.F10_7 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F10_7))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F10_7))
+
+## Data Distribution
+sns.distplot(df.F10_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_7)
+plt.show()
+F10_8 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_8))
+print('Kurtosis is: ', stats.kurtosis(df.F10_8))
+
+## Data Distribution
+sns.distplot(df.F10_8)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_8)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F10_8 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F10_8 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F10_8 < lower_limit) | (df.F10_8 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F10_8 >= lower_limit) & (df.F10_8 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F10_7))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F10_7))
+
+## Data Distribution
+sns.distplot(df.F10_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_7)
+plt.show()
+F10_9 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F10_9))
+print('Kurtosis is: ', stats.kurtosis(df.F10_9))
+
+## Data Distribution
+sns.distplot(df.F10_9)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_9)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F10_9 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F10_9 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F10_9 < lower_limit) | (df.F10_9 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F10_9 >= lower_limit) & (df.F10_9 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F10_9))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F10_9))
+
+## Data Distribution
+sns.distplot(df.F10_9)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F10_9)
+plt.show()
+F11_1 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F11_1))
+print('Kurtosis is: ', stats.kurtosis(df.F11_1))
+
+## Data Distribution
+sns.distplot(df.F11_1)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_1)
+plt.show()
+F11_3 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F11_3))
+print('Kurtosis is: ', stats.kurtosis(df.F11_3))
+
+## Data Distribution
+sns.distplot(df.F11_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_3)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_3 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_3 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_3 < lower_limit) | (df.F11_3 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_3 >= lower_limit) & (df.F11_3 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F11_3))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F11_3))
+
+## Data Distribution
+sns.distplot(df.F11_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_3)
+plt.show()
+F11_4 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F11_4))
+print('Kurtosis is: ', stats.kurtosis(df.F11_4))
+
+## Data Distribution
+sns.distplot(df.F11_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_4)
+plt.show(
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_4 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_4 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_4 < lower_limit) | (df.F11_4 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_4 >= lower_limit) & (df.F11_4 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F11_4))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F11_4))
+
+## Data Distribution
+sns.distplot(df.F11_4)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_4)
+plt.show()
+F11_5 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F11_5))
+print('Kurtosis is: ', stats.kurtosis(df.F11_5))
+
+## Data Distribution
+sns.distplot(df.F11_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_5 < lower_limit) | (df.F11_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_5 >= lower_limit) & (df.F11_5 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F11_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_5 < lower_limit) | (df.F11_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_5 >= lower_limit) & (df.F11_5 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F11_5)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_5 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_5 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_5 < lower_limit) | (df.F11_5 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_5 >= lower_limit) & (df.F11_5 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F11_5))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F11_5))
+
+## Data Distribution
+sns.distplot(df.F11_5)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_5)
+plt.show()
+F11_6 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F11_6))
+print('Kurtosis is: ', stats.kurtosis(df.F11_6))
+
+## Data Distribution
+sns.distplot(df.F11_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_6)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_6 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_6 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_6 < lower_limit) | (df.F11_6 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_6 >= lower_limit) & (df.F11_6 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F11_6))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F11_6))
+
+## Data Distribution
+sns.distplot(df.F11_6)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_6)
+plt.show()
+F11_7 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F11_7))
+print('Kurtosis is: ', stats.kurtosis(df.F11_7))
+
+## Data Distribution
+sns.distplot(df.F11_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_7)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_7 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_7 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_7 < lower_limit) | (df.F11_7 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_7 >= lower_limit) & (df.F11_7 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F11_7))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F11_7))
+
+## Data Distribution
+sns.distplot(df.F11_7)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_7)
+plt.show()
+F11_8 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F11_8))
+print('Kurtosis is: ', stats.kurtosis(df.F11_8))
+
+## Data Distribution
+sns.distplot(df.F11_8)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_8)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_8 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_8 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_8 < lower_limit) | (df.F11_8 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_8 >= lower_limit) & (df.F11_8 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F11_8)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F11_8 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F11_8 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F11_8 < lower_limit) | (df.F11_8 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F11_8 >= lower_limit) & (df.F11_8 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F11_8))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F11_8))
+
+## Data Distribution
+sns.distplot(df.F11_8)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F11_8)
+plt.show()
+F12_3 Outliers Detection and Removal
+## Data Normalization
+print('Skewness is: ', stats.skew(df.F12_3))
+print('Kurtosis is: ', stats.kurtosis(df.F12_3))
+
+## Data Distribution
+sns.distplot(df.F12_3)
+plt.show()
+## Outliers Detection
+sns.boxplot(df.F12_3)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F12_3 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F12_3 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F12_3 < lower_limit) | (df.F12_3 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F12_3 >= lower_limit) & (df.F12_3 <= upper_limit) ]
+df.head()
+sns.boxplot(df.F12_3)
+plt.show()
+### Detecting outliers through IQR
+Q1 = np.percentile(df.F12_3 , 25)
+print('Q1: ', Q1)
+Q3 = np.percentile(df.F12_3 , 75)
+print('Q3: ', Q3)
+IQR = Q3 - Q1
+print('IQR: ', IQR)
+lower_limit = Q1 - 1.5 * IQR
+upper_limit = Q3 + 1.5 * IQR
+print('Lower limit is: ', lower_limit)
+print('Upper limit is: ', upper_limit)
+## Detecting Outliers
+df [ (df.F12_3 < lower_limit) | (df.F12_3 > upper_limit) ]
+## Removing Outliers
+df = df [ (df.F12_3 >= lower_limit) & (df.F12_3 <= upper_limit) ]
+df.head()
+## Data Normalization
+print('Skewness after outlier removal is: ', stats.skew(df.F12_3))
+print('Kurtosis after outlier removal is: ', stats.kurtosis(df.F12_3))
+
+## Data Distribution
+sns.distplot(df.F12_3)
+plt.show()
+
+## Outliers Detection
+sns.boxplot(df.F12_3)
+plt.show()
+Separating Predictors and Target
+X = df.drop(['Class'], axis = 1)
+y = df.Class.values
+##Scaling the Data##
+X_scaled = StandardScaler().fit_transform(X)
+Train - Test Split
+X_train , X_test, y_train , y_test = train_test_split(X_scaled, y, test_size=0.2, stratify=y, random_state=10)
+Model Generation Random Forest
+model = RandomForestClassifier()
+model.fit(X_train,y_train)
+RandomForestClassifier()
+##Evaluate the model##
+y_predict = model.predict(X_test)
+RFaccuracy = accuracy_score(y_test, y_predict)
+print(RFaccuracy)
+pd.crosstab(y_test, y_predict)
+print(classification_report(y_test, y_predict))
+##Feature Selection##
+target = 'Class'
+features, y = featurewiz(df, target, corr_limit=0.7, verbose=2, sep=",",
+                            header=0, test_data="",feature_engg="",category_encoders="")
+Important Feature Selected
+print(features)
+##Dropping columns that are not important##
+df.drop(columns=['F4', 'F5', 'F6', 'F7_1', 'F7_3', 'F7_5', 'F7_7',
+       'F7_9', 'F7_10', 'F8_2', 'F8_3', 'F8_4', 'F8_5', 'F8_7',
+       'F8_8','F9_2', 'F9_3', 'F9_4', 'F9_5',
+       'F10_5', 'F10_7', 'F11_1', 'F11_4', 'F11_5'], inplace=True)
+df.head()
+df.columns
+Index(['Class', 'F2', 'F7_6', 'F7_8', 'F8_6', 'F8_9', 'F8_10', 'F9_1', 'F9_6',
+       'F10_1', 'F10_2', 'F10_4', 'F10_8', 'F10_9', 'F11_3', 'F11_6', 'F11_7',
+       'F11_8', 'F12_3'],
+      dtype='object')
+X = df.drop(['Class'], axis =1)
+y = df.Class
+##Scaling the Data##
+X_scaled = StandardScaler().fit_transform(X)
+Train - Test Split
+X_train , X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, stratify=y, random_state=1)
+Model Building Random Forest
+model_nf = RandomForestClassifier()
+model_nf.fit(X_train, y_train)
+RandomForestClassifier()
+##Evaluate the Model##
+y_predict = model_nf.predict(X_test)
+RFaccuracy_nf = accuracy_score(y_test, y_predict)
+print(RFaccuracy_nf)
+pd.crosstab(y_test, y_predict)
+Checking Imbalance Data
+rcParams['figure.figsize']= 8,6
+y.value_counts().plot.pie(autopct ='%.2f')
+plt.title('Imbalanced Data')
+plt.legend(['0 = Negative', '1 = Positive'])
+plt.show()
+##SMOTE##
+smote = SMOTE(random_state=10)
+
+X_train_smote , y_train_smote = smote.fit_resample(X_train, y_train)
+y_train_smote.value_counts()
+rcParams['figure.figsize']= 8,6
+y_train_smote.value_counts().plot.pie(autopct ='%.2f')
+plt.title('Balanced Data')
+plt.legend(['0 = Negative', '1 = Positive'])
+plt.show()
+Plot showing Balanced and Imbalanced Data.
+rcParams['figure.figsize']= 15,5
+fig, (ax1 , ax2)= plt.subplots(1,2)
+
+ax1.pie( y.value_counts() ,autopct ='%.2f')
+ax1.set_title('Imbalanced Data Check')
+ax1.legend(['0 = Negative', '1 = Positive'],fontsize=9, title_fontsize=9)
+
+ax2.pie(y_train_smote.value_counts(),autopct ='%.2f')
+ax2.set_title('Balanced Data Check')
+ax2.legend(['0 = Negative', '1 = Positive'],fontsize=9, title_fontsize=9)
+fig.suptitle('Imbalanced Data VS Balanced Data')
+plt.subplots_adjust(left=0.1,
+                    bottom=0.1, 
+                    right=0.9, 
+                    top=0.2, 
+                    wspace=0.4, 
+                    hspace=0.4)
+fig.tight_layout()
+plt.show()
+Model Building (Random Forest SMOTE)
+RFmodel_smote = RandomForestClassifier(n_estimators=500, max_features= 2)
+RFmodel_smote.fit(X_train_smote,y_train_smote)
+RandomForestClassifier(max_features=2, n_estimators=500)
+##Evaluate the model##
+y_smote_predict = RFmodel_smote.predict(X_test)
+RFaccuracy_smote= accuracy_score(y_test, y_smote_predict)
+print(RFaccuracy_smote)
+Model Building (Decision Tree)
+DTmodel = DecisionTreeClassifier()
+DTmodel.fit(X_train, y_train)
+DecisionTreeClassifier()
+##Evaluate the Model##
+y_predict = DTmodel.predict(X_test)
+DTaccuracy = accuracy_score(y_test, y_predict)
+print(DTaccuracy)
+pd.crosstab(y_test, y_predict)
+print(classification_report(y_test, y_predict))
+Checking accuracy on SMOTE data
+DTmodel_smote = DecisionTreeClassifier()
+DTmodel_smote.fit(X_train_smote, y_train_smote)
+DecisionTreeClassifier()
+##Evaluate the Model##
+y_smote_predict = DTmodel_smote.predict(X_test)
+DTaccuracy_smote = accuracy_score(y_test, y_smote_predict)
+print(DTaccuracy_smote)
+pd.crosstab(y_test, y_smote_predict)
+print(classification_report(y_test, y_smote_predict))
+              precision    recall  f1-score   support
+
+
+
+Model Building (XG Boost)
+XGmodel = XGBClassifier()
+XGmodel.fit(X_train, y_train)
+XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+              colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1,
+              early_stopping_rounds=None, enable_categorical=False,
+              eval_metric=None, gamma=0, gpu_id=-1, grow_policy='depthwise',
+              importance_type=None, interaction_constraints='',
+              learning_rate=0.300000012, max_bin=256, max_cat_to_onehot=4,
+              max_delta_step=0, max_depth=6, max_leaves=0, min_child_weight=1,
+              missing=nan, monotone_constraints='()', n_estimators=100,
+              n_jobs=0, num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, ...)
+##Evaluate the Model##
+y_predict = XGmodel.predict(X_test)
+XGaccuracy = accuracy_score(y_test, y_predict)
+print(XGaccuracy)
+pd.crosstab(y_test, y_predict)
+print(classification_report(y_test, y_predict))
+              
+##Checking accuracy on SMOTE data##
+XGmodel_smote = XGBClassifier()
+XGmodel_smote.fit(X_train_smote, y_train_smote)
+XGBClassifier(base_score=0.5, booster='gbtree', callbacks=None,
+              colsample_bylevel=1, colsample_bynode=1, colsample_bytree=1,
+              early_stopping_rounds=None, enable_categorical=False,
+              eval_metric=None, gamma=0, gpu_id=-1, grow_policy='depthwise',
+              importance_type=None, interaction_constraints='',
+              learning_rate=0.300000012, max_bin=256, max_cat_to_onehot=4,
+              max_delta_step=0, max_depth=6, max_leaves=0, min_child_weight=1,
+              missing=nan, monotone_constraints='()', n_estimators=100,
+              n_jobs=0, num_parallel_tree=1, predictor='auto', random_state=0,
+              reg_alpha=0, reg_lambda=1, ...)
+##Evaluate the model##
+y_smote_predict = XGmodel_smote.predict(X_test)
+XGaccuracy_smote = accuracy_score(y_test, y_smote_predict)
+print(XGaccuracy_smote)
+pd.crosstab(y_test, y_smote_predict)
+print(classification_report(y_test, y_smote_predict))
+Model Building (SVC)
+SVCmodel = SVC(kernel='rbf', C = 250, gamma=0.1)
+SVCmodel.fit(X_train, y_train)
+SVC(C=250, gamma=0.1)
+##Evaluate the model##
+y_predict = SVCmodel.predict(X_test)
+SVCaccuracy = accuracy_score(y_test, y_predict)
+print(SVCaccuracy)
+pd.crosstab(y_test, y_predict)
+print(classification_report(y_test, y_predict))
+Checking accuracy with SMOTE data
+SVC_smote = SVC(kernel='rbf', C = 250, gamma=0.1)
+SVC_smote.fit(X_train_smote, y_train_smote)
+SVC(C=250, gamma=0.1)
+##Evaluate the model##
+y_smote_predict = SVC_smote.predict(X_test)
+SVCaccuracy_smote = accuracy_score(y_test, y_smote_predict)
+print(SVCaccuracy_smote)
+pd.crosstab(y_test, y_smote_predict)
+print(classification_report(y_test, y_smote_predict))
+Model Building (ANN)
+ANNmodel = MLPClassifier(hidden_layer_sizes=(512,128,64), max_iter=100, shuffle=False)
+ANNmodel.fit(X_train, y_train)
+MLPClassifier(hidden_layer_sizes=(512, 128, 64), max_iter=100, shuffle=False)
+##Evaluate the model##
+y_predict = ANNmodel.predict(X_test)
+ANNaccuracy = accuracy_score(y_test, y_predict)
+print(ANNaccuracy)
+pd.crosstab(y_test, y_predict)
+print(classification_report(y_test, y_predict))
+Checking accuracy for SMOTE data
+ANNmodel_smote = MLPClassifier(hidden_layer_sizes=(512,128,64), max_iter=100, shuffle=False)
+ANNmodel_smote.fit(X_train_smote, y_train_smote)
+MLPClassifier(hidden_layer_sizes=(512, 128, 64), max_iter=100, shuffle=False)
+##Evaluate the model##
+y_smote_predict = ANNmodel_smote.predict(X_test)
+ANNaccuracy_smote = accuracy_score(y_test, y_predict)
+print(ANNaccuracy_smote)
+pd.crosstab(y_test, y_smote_predict)
+print(classification_report(y_test, y_smote_predict))
+ROC Curve
+np.set_printoptions(suppress=True)
+model_nf.predict_proba(X_test).astype('float')
+probability = model_nf.predict_proba(X_test)[:,1]
+fpr, tpr, threshold = roc_curve(y_test, probability)
+plt.plot(fpr, tpr)
+plt.title('ROC Curve')
+plt.xlabel('FPR')
+plt.ylabel('TPR')
+plt.show()
+roc_auc_score(y_test, probability)*100
+##Deploying the Model##
+joblib.dump(model_nf , 'deployment.pkl')
+['deployment.pkl']
+K-Fold Cross Validation
+from sklearn.model_selection import cross_val_score
+k_fold = cross_val_score(model_nf, X, y, cv=5, scoring='accuracy')
+kfold = KFold(n_splits=950)
+# create the sub models
+estimators = []
+model_nf = RandomForestClassifier()
+estimators.append(('Random Forest', model_nf))
+DTmodel = DecisionTreeClassifier()
+estimators.append(('Decision Tree', DTmodel))
+XGmodel = XGBClassifier()
+estimators.append(('XG Boost', XGmodel))
+SVCmodel = SVC()
+estimators.append(('SVM', SVCmodel))
+ANNmodel = MLPClassifier()
+estimators.append(('ANN', ANNmodel))
+# create the ensemble model
+ensemble = VotingClassifier(estimators)
+results = cross_val_score(ensemble, X, y, cv=kfold)
+print(results.mean())
+ensemble.fit(X_train, y_train)
+VotingClassifier(estimators=[('Random Forest', RandomForestClassifier()),
+                             ('Decision Tree', DecisionTreeClassifier()),
+                             ('XG Boost',
+                              XGBClassifier(base_score=None, booster=None,
+                                            callbacks=None,
+                                            colsample_bylevel=None,
+                                            colsample_bynode=None,
+                                            colsample_bytree=None,
+                                            early_stopping_rounds=None,
+                                            enable_categorical=False,
+                                            eval_metric=None, gamma=None,
+                                            gpu_id=None, grow_poli...
+                                            interaction_constraints=None,
+                                            learning_rate=None, max_bin=None,
+                                            max_cat_to_onehot=None,
+                                            max_delta_step=None,    max_depth=None,
+                                            max_leaves=None,
+                                            min_child_weight=None, missing=nan,
+                                            monotone_constraints=None,
+                                            n_estimators=100, n_jobs=None,
+                                            num_parallel_tree=None,
+                                            predictor=None, random_state=None,
+                                            reg_alpha=None, reg_lambda=None, ...)),
+                             ('SVM', SVC()), ('ANN', MLPClassifier())])
+y_predict = ensemble.predict(X_test)
+ensembl_accuracy = accuracy_score(y_test, y_predict)
+print(ensembl_accuracy)
+pd.crosstab(y_test, y_predict)
+print(classification_report(y_test, y_predict))
+Plotting different model accuracy
+x = ['Random Forest', 'XG Boost','Decision Tree','SVC','ANN', 'ensemble','Random Forest']
+y = [XGaccuracy,DTaccuracy,SVCaccuracy,ANNaccuracy,ensembl_accuracy, RFaccuracy_nf]
+z = [f'{i*100:.2f}%' for i in y]
+plt.barh(x,z)
+plt.title('Model Accuracy')
+plt.ylabel("Models")
+plt.xlabel("Accuracy %age")
+
+for index, value in enumerate(z):
+    plt.text(value, index, str(value))
+plt.show()
